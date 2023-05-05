@@ -1,1 +1,1 @@
-/home/nano/miniCart_ws/src/miniCart/launch/rsp.launch.py
+/home/nano/miniCart_ros/src/miniCart/launch/rsp.launch.py

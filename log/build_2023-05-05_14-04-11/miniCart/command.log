@@ -1,0 +1,6 @@
+Invoking command in '/home/nano/miniCart_ros/build/miniCart': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/nano/miniCart_ros/src/miniCart -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nano/miniCart_ros/install/miniCart
+Invoked command in '/home/nano/miniCart_ros/build/miniCart' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/nano/miniCart_ros/src/miniCart -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nano/miniCart_ros/install/miniCart
+Invoking command in '/home/nano/miniCart_ros/build/miniCart': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/nano/miniCart_ros/build/miniCart -- -j4 -l4
+Invoked command in '/home/nano/miniCart_ros/build/miniCart' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/nano/miniCart_ros/build/miniCart -- -j4 -l4
+Invoking command in '/home/nano/miniCart_ros/build/miniCart': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/nano/miniCart_ros/build/miniCart
+Invoked command in '/home/nano/miniCart_ros/build/miniCart' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/nano/miniCart_ros/build/miniCart

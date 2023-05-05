@@ -1,1 +1,1 @@
-/home/nano/miniCart_ws/build/miniCart/ament_cmake_core/miniCartConfig-version.cmake
+/home/nano/miniCart_ros/build/miniCart/ament_cmake_core/miniCartConfig-version.cmake

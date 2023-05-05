@@ -1,8 +1,8 @@
-# Install script for directory: /home/nano/miniCart_ws/src/miniCart
+# Install script for directory: /home/nano/miniCart_ros/src/miniCart
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nano/miniCart_ws/install/miniCart")
+  set(CMAKE_INSTALL_PREFIX "/home/nano/miniCart_ros/install/miniCart")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/nano/miniCart_ws/build/miniCart/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/nano/miniCart_ros/build/miniCart/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -49,5 +49,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nano/miniCart_ws/build/miniCart/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nano/miniCart_ros/build/miniCart/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

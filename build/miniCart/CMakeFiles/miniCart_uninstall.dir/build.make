@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nano/miniCart_ws/src/miniCart
+CMAKE_SOURCE_DIR = /home/nano/miniCart_ros/src/miniCart
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nano/miniCart_ws/build/miniCart
+CMAKE_BINARY_DIR = /home/nano/miniCart_ros/build/miniCart
 
 # Utility rule file for miniCart_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/nano/miniCart_ws/build/miniCart
 include CMakeFiles/miniCart_uninstall.dir/progress.make
 
 CMakeFiles/miniCart_uninstall:
-	/usr/bin/cmake -P /home/nano/miniCart_ws/build/miniCart/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/nano/miniCart_ros/build/miniCart/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 miniCart_uninstall: CMakeFiles/miniCart_uninstall
 miniCart_uninstall: CMakeFiles/miniCart_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/miniCart_uninstall.dir/clean:
 .PHONY : CMakeFiles/miniCart_uninstall.dir/clean
 
 CMakeFiles/miniCart_uninstall.dir/depend:
-	cd /home/nano/miniCart_ws/build/miniCart && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nano/miniCart_ws/src/miniCart /home/nano/miniCart_ws/src/miniCart /home/nano/miniCart_ws/build/miniCart /home/nano/miniCart_ws/build/miniCart /home/nano/miniCart_ws/build/miniCart/CMakeFiles/miniCart_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nano/miniCart_ros/build/miniCart && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nano/miniCart_ros/src/miniCart /home/nano/miniCart_ros/src/miniCart /home/nano/miniCart_ros/build/miniCart /home/nano/miniCart_ros/build/miniCart /home/nano/miniCart_ros/build/miniCart/CMakeFiles/miniCart_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/miniCart_uninstall.dir/depend
 
