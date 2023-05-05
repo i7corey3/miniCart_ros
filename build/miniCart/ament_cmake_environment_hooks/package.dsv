@@ -1,0 +1,4 @@
+source;share/miniCart/local_setup.bash
+source;share/miniCart/local_setup.dsv
+source;share/miniCart/local_setup.sh
+source;share/miniCart/local_setup.zsh

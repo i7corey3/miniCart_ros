@@ -1,0 +1,9 @@
+/home/nano/miniCart_ws/build/miniCart/CMakeFiles/install/strip.dir
+/home/nano/miniCart_ws/build/miniCart/CMakeFiles/install/local.dir
+/home/nano/miniCart_ws/build/miniCart/CMakeFiles/install.dir
+/home/nano/miniCart_ws/build/miniCart/CMakeFiles/list_install_components.dir
+/home/nano/miniCart_ws/build/miniCart/CMakeFiles/rebuild_cache.dir
+/home/nano/miniCart_ws/build/miniCart/CMakeFiles/edit_cache.dir
+/home/nano/miniCart_ws/build/miniCart/CMakeFiles/test.dir
+/home/nano/miniCart_ws/build/miniCart/CMakeFiles/miniCart_uninstall.dir
+/home/nano/miniCart_ws/build/miniCart/CMakeFiles/uninstall.dir
