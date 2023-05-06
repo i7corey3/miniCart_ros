@@ -1,0 +1,1 @@
+/home/nano/miniCart_ros/build/sabertooth_msg/rosidl_cmake/rosidl_cmake-extras.cmake

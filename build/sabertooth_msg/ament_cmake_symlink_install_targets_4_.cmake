@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/nano/miniCart_ros/build/sabertooth_msg/rosidl_generator_py/sabertooth_msg/sabertooth_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" "TARGETS" "sabertooth_msg__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.8/site-packages/sabertooth_msg")

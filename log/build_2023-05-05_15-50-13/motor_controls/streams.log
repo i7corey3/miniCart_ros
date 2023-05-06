@@ -1,0 +1,18 @@
+[2.216s] Invoking command in '/home/nano/miniCart_ros/build/motor_controls': PYTHONPATH=/home/nano/miniCart_ros/build/motor_controls/prefix_override:/home/nano/miniCart_ros/install/motor_controls/lib/python3.8/site-packages:/home/nano/miniCart_ros/install/sabertooth_msg/lib/python3.8/site-packages:/home/nano/miniCart_ros/build/motor_controls:/home/nano/miniCart_ros/install/motor_controls/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/nano/miniCart_ros/build/motor_controls/build --no-deps install_data
+[3.027s] running develop
+[3.466s] running egg_info
+[3.466s] writing motor_controls.egg-info/PKG-INFO
+[3.467s] writing dependency_links to motor_controls.egg-info/dependency_links.txt
+[3.467s] writing entry points to motor_controls.egg-info/entry_points.txt
+[3.471s] writing requirements to motor_controls.egg-info/requires.txt
+[3.471s] writing top-level names to motor_controls.egg-info/top_level.txt
+[3.621s] reading manifest file 'motor_controls.egg-info/SOURCES.txt'
+[3.624s] writing manifest file 'motor_controls.egg-info/SOURCES.txt'
+[3.629s] running build_ext
+[3.630s] Creating /home/nano/miniCart_ros/install/motor_controls/lib/python3.8/site-packages/motor-controls.egg-link (link to .)
+[3.633s] Installing control script to /home/nano/miniCart_ros/install/motor_controls/lib/motor_controls
+[3.634s] Installing driver script to /home/nano/miniCart_ros/install/motor_controls/lib/motor_controls
+[3.635s] 
+[3.635s] Installed /home/nano/miniCart_ros/build/motor_controls
+[3.635s] running install_data
+[3.749s] Invoked command in '/home/nano/miniCart_ros/build/motor_controls' returned '0': PYTHONPATH=/home/nano/miniCart_ros/build/motor_controls/prefix_override:/home/nano/miniCart_ros/install/motor_controls/lib/python3.8/site-packages:/home/nano/miniCart_ros/install/sabertooth_msg/lib/python3.8/site-packages:/home/nano/miniCart_ros/build/motor_controls:/home/nano/miniCart_ros/install/motor_controls/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/nano/miniCart_ros/build/motor_controls/build --no-deps install_data

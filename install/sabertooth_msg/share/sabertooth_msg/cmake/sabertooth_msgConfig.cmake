@@ -1,0 +1,1 @@
+/home/nano/miniCart_ros/build/sabertooth_msg/ament_cmake_core/sabertooth_msgConfig.cmake

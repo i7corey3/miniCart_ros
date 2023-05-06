@@ -1,0 +1,33 @@
+[0.073s] Invoking command in '/home/nano/miniCart_ros/build/sabertooth_msg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/nano/miniCart_ros/src/sabertooth_msg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nano/miniCart_ros/install/sabertooth_msg
+[0.281s] -- The C compiler identification is GNU 9.4.0
+[0.488s] -- The CXX compiler identification is GNU 9.4.0
+[0.509s] -- Check for working C compiler: /usr/bin/cc
+[0.744s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.747s] -- Detecting C compiler ABI info
+[0.976s] -- Detecting C compiler ABI info - done
+[1.024s] -- Detecting C compile features
+[1.025s] -- Detecting C compile features - done
+[1.034s] -- Check for working CXX compiler: /usr/bin/c++
+[1.294s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.298s] -- Detecting CXX compiler ABI info
+[1.563s] -- Detecting CXX compiler ABI info - done
+[1.613s] -- Detecting CXX compile features
+[1.615s] -- Detecting CXX compile features - done
+[1.625s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.690s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.690s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.317s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.408s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.682s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.694s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.722s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.032s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.134s] -- Found FastRTPS: /opt/ros/foxy/include  
+[3.453s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.568s] CMake Error at CMakeLists.txt:37 (rosidl_default_generators):
+[3.569s]   Unknown CMake command "rosidl_default_generators".
+[3.569s] 
+[3.569s] 
+[3.575s] -- Configuring incomplete, errors occurred!
+[3.575s] See also "/home/nano/miniCart_ros/build/sabertooth_msg/CMakeFiles/CMakeOutput.log".
+[3.599s] Invoked command in '/home/nano/miniCart_ros/build/sabertooth_msg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/nano/miniCart_ros/src/sabertooth_msg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nano/miniCart_ros/install/sabertooth_msg

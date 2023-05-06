@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/nano/miniCart_ros/build/sabertooth_msg/rosidl_generator_py/sabertooth_msg/libsabertooth_msg__python.so" "TARGETS" "sabertooth_msg__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

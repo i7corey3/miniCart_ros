@@ -1,0 +1,4 @@
+[console_scripts]
+control = motor_controls.Controller:main
+driver = motor_controls.sabertooth:main
+

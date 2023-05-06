@@ -1,0 +1,6 @@
+Invoking command in '/home/nano/miniCart_ros/build/sabertooth_msg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/nano/miniCart_ros/src/sabertooth_msg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nano/miniCart_ros/install/sabertooth_msg
+Invoked command in '/home/nano/miniCart_ros/build/sabertooth_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/nano/miniCart_ros/src/sabertooth_msg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nano/miniCart_ros/install/sabertooth_msg
+Invoking command in '/home/nano/miniCart_ros/build/sabertooth_msg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/nano/miniCart_ros/build/sabertooth_msg -- -j4 -l4
+Invoked command in '/home/nano/miniCart_ros/build/sabertooth_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/nano/miniCart_ros/build/sabertooth_msg -- -j4 -l4
+Invoking command in '/home/nano/miniCart_ros/build/sabertooth_msg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/nano/miniCart_ros/build/sabertooth_msg
+Invoked command in '/home/nano/miniCart_ros/build/sabertooth_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/nano/miniCart_ros/build/sabertooth_msg

@@ -1,0 +1,125 @@
+[0.000000] (-) TimerEvent: {}
+[0.006251] (miniCart) JobQueued: {'identifier': 'miniCart', 'dependencies': OrderedDict()}
+[0.006444] (sabertooth_msg) JobQueued: {'identifier': 'sabertooth_msg', 'dependencies': OrderedDict()}
+[0.006606] (motor_controls) JobQueued: {'identifier': 'motor_controls', 'dependencies': OrderedDict([('sabertooth_msg', '/home/nano/miniCart_ros/install/sabertooth_msg')])}
+[0.006765] (sabertooth_msg) JobStarted: {'identifier': 'sabertooth_msg'}
+[0.040109] (miniCart) JobStarted: {'identifier': 'miniCart'}
+[0.072128] (sabertooth_msg) JobProgress: {'identifier': 'sabertooth_msg', 'progress': 'cmake'}
+[0.074681] (sabertooth_msg) Command: {'cmd': ['/usr/bin/cmake', '/home/nano/miniCart_ros/src/sabertooth_msg', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/nano/miniCart_ros/install/sabertooth_msg'], 'cwd': '/home/nano/miniCart_ros/build/sabertooth_msg', 'env': OrderedDict([('USER', 'nano'), ('SSH_CLIENT', '192.168.0.181 54560 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nano'), ('OLDPWD', '/home/nano'), ('TERM_PROGRAM_VERSION', '1.78.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6fe1df74-3f4f-467b-b5b9-44321eaf7f20.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nano'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ce3b1e56cc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/nano/miniCart_ros/build/sabertooth_msg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.181 54560 192.168.0.194 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.090261] (miniCart) JobProgress: {'identifier': 'miniCart', 'progress': 'cmake'}
+[0.092652] (miniCart) JobProgress: {'identifier': 'miniCart', 'progress': 'build'}
+[0.095545] (miniCart) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nano/miniCart_ros/build/miniCart', '--', '-j4', '-l4'], 'cwd': '/home/nano/miniCart_ros/build/miniCart', 'env': OrderedDict([('USER', 'nano'), ('SSH_CLIENT', '192.168.0.181 54560 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nano'), ('OLDPWD', '/home/nano'), ('TERM_PROGRAM_VERSION', '1.78.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6fe1df74-3f4f-467b-b5b9-44321eaf7f20.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nano'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ce3b1e56cc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/nano/miniCart_ros/build/miniCart'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.181 54560 192.168.0.194 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.106386] (-) TimerEvent: {}
+[0.136287] (sabertooth_msg) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.203932] (sabertooth_msg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.206531] (-) TimerEvent: {}
+[0.236726] (miniCart) CommandEnded: {'returncode': 0}
+[0.306080] (miniCart) JobProgress: {'identifier': 'miniCart', 'progress': 'install'}
+[0.310069] (-) TimerEvent: {}
+[0.348612] (miniCart) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nano/miniCart_ros/build/miniCart'], 'cwd': '/home/nano/miniCart_ros/build/miniCart', 'env': OrderedDict([('USER', 'nano'), ('SSH_CLIENT', '192.168.0.181 54560 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nano'), ('OLDPWD', '/home/nano'), ('TERM_PROGRAM_VERSION', '1.78.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6fe1df74-3f4f-467b-b5b9-44321eaf7f20.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nano'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ce3b1e56cc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/nano/miniCart_ros/build/miniCart'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.181 54560 192.168.0.194 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.378688] (miniCart) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.380746] (miniCart) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.382763] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/config/drive_bot.rviz\n'}
+[0.383777] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/config/empty.yaml\n'}
+[0.385929] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/config/view_bot_rviz.rviz\n'}
+[0.386688] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/description/gazebo_control.xacro\n'}
+[0.387246] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/description/inertial_macros.xacro\n'}
+[0.387857] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/description/robot.urdf.xacro\n'}
+[0.388279] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/description/robot_core.xacro\n'}
+[0.389357] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/launch/launch_sim.launch.py\n'}
+[0.389984] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/launch/rsp.launch.py\n'}
+[0.391401] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/worlds/Kitchen.world\n'}
+[0.392059] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/worlds/empty.world\n'}
+[0.393381] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/ament_index/resource_index/package_run_dependencies/miniCart\n'}
+[0.394608] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/ament_index/resource_index/parent_prefix_path/miniCart\n'}
+[0.395727] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/environment/ament_prefix_path.sh\n'}
+[0.396840] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/environment/ament_prefix_path.dsv\n'}
+[0.397914] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/environment/path.sh\n'}
+[0.399021] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/environment/path.dsv\n'}
+[0.400074] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/local_setup.bash\n'}
+[0.401111] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/local_setup.sh\n'}
+[0.402270] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/local_setup.zsh\n'}
+[0.403317] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/local_setup.dsv\n'}
+[0.404125] (miniCart) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/miniCart/share/miniCart/package.dsv\n'}
+[0.409982] (-) TimerEvent: {}
+[0.435488] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/ament_index/resource_index/packages/miniCart\n'}
+[0.436514] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/cmake/miniCartConfig.cmake\n'}
+[0.437229] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/cmake/miniCartConfig-version.cmake\n'}
+[0.438276] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/package.xml\n'}
+[0.443788] (miniCart) CommandEnded: {'returncode': 0}
+[0.511066] (-) TimerEvent: {}
+[0.617194] (-) TimerEvent: {}
+[0.628950] (miniCart) JobEnded: {'identifier': 'miniCart', 'rc': 0}
+[0.717404] (-) TimerEvent: {}
+[0.818061] (-) TimerEvent: {}
+[0.877222] (sabertooth_msg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.905231] (sabertooth_msg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.918210] (-) TimerEvent: {}
+[1.018841] (-) TimerEvent: {}
+[1.119552] (-) TimerEvent: {}
+[1.139502] (sabertooth_msg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.147485] (sabertooth_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.162019] (sabertooth_msg) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.219690] (-) TimerEvent: {}
+[1.320358] (-) TimerEvent: {}
+[1.421058] (-) TimerEvent: {}
+[1.521731] (-) TimerEvent: {}
+[1.622409] (-) TimerEvent: {}
+[1.694550] (sabertooth_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.722540] (-) TimerEvent: {}
+[1.823146] (-) TimerEvent: {}
+[1.849708] (sabertooth_msg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.923396] (-) TimerEvent: {}
+[2.024093] (-) TimerEvent: {}
+[2.124782] (-) TimerEvent: {}
+[2.225438] (-) TimerEvent: {}
+[2.326053] (-) TimerEvent: {}
+[2.417486] (sabertooth_msg) StderrLine: {'line': b'CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):\n'}
+[2.418240] (sabertooth_msg) StderrLine: {'line': b'  execute_process(/usr/bin/python3 -m rosidl_adapter --package-name\n'}
+[2.418686] (sabertooth_msg) StderrLine: {'line': b'  sabertooth_msg --arguments-file\n'}
+[2.419168] (sabertooth_msg) StderrLine: {'line': b'  /home/nano/miniCart_ros/build/sabertooth_msg/rosidl_adapter__arguments__sabertooth_msg.json\n'}
+[2.419654] (sabertooth_msg) StderrLine: {'line': b'  --output-dir\n'}
+[2.420129] (sabertooth_msg) StderrLine: {'line': b'  /home/nano/miniCart_ros/build/sabertooth_msg/rosidl_adapter/sabertooth_msg\n'}
+[2.420604] (sabertooth_msg) StderrLine: {'line': b'  --output-file\n'}
+[2.421072] (sabertooth_msg) StderrLine: {'line': b'  /home/nano/miniCart_ros/build/sabertooth_msg/rosidl_adapter/sabertooth_msg.idls)\n'}
+[2.421539] (sabertooth_msg) StderrLine: {'line': b'  returned error code 1:\n'}
+[2.422051] (sabertooth_msg) StderrLine: {'line': b'\n'}
+[2.422420] (sabertooth_msg) StderrLine: {'line': b"  Error processing 'int32 frontLeft_speed' of 'sabertooth_msg/SpeedVals':\n"}
+[2.422760] (sabertooth_msg) StderrLine: {'line': b"  ''frontLeft_speed' is an invalid field name.  It should have the pattern\n"}
+[2.423101] (sabertooth_msg) StderrLine: {'line': b"  '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''\n"}
+[2.423445] (sabertooth_msg) StderrLine: {'line': b'\n'}
+[2.423786] (sabertooth_msg) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[2.424129] (sabertooth_msg) StderrLine: {'line': b'\n'}
+[2.424468] (sabertooth_msg) StderrLine: {'line': b'    File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main\n'}
+[2.424816] (sabertooth_msg) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[2.425411] (sabertooth_msg) StderrLine: {'line': b'    File "/usr/lib/python3.8/runpy.py", line 87, in _run_code\n'}
+[2.425780] (sabertooth_msg) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[2.426212] (-) TimerEvent: {}
+[2.426604] (sabertooth_msg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[2.427155] (sabertooth_msg) StderrLine: {'line': b'      sys.exit(main())\n'}
+[2.427633] (sabertooth_msg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[2.428061] (sabertooth_msg) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[2.428450] (sabertooth_msg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl\n'}
+[2.428957] (sabertooth_msg) StderrLine: {'line': b'      return convert_msg_to_idl(\n'}
+[2.429400] (sabertooth_msg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl\n'}
+[2.429791] (sabertooth_msg) StderrLine: {'line': b'      msg = parse_message_string(package_name, input_file.stem, content)\n'}
+[2.430269] (sabertooth_msg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 515, in parse_message_string\n'}
+[2.430675] (sabertooth_msg) StderrLine: {'line': b'      fields.append(Field(\n'}
+[2.431068] (sabertooth_msg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 353, in __init__\n'}
+[2.431509] (sabertooth_msg) StderrLine: {'line': b'      raise NameError(\n'}
+[2.431894] (sabertooth_msg) StderrLine: {'line': b'\n'}
+[2.432282] (sabertooth_msg) StderrLine: {'line': b"  NameError: 'frontLeft_speed' is an invalid field name.  It should have the\n"}
+[2.432700] (sabertooth_msg) StderrLine: {'line': b"  pattern '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'\n"}
+[2.433090] (sabertooth_msg) StderrLine: {'line': b'\n'}
+[2.433538] (sabertooth_msg) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.434023] (sabertooth_msg) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[2.434481] (sabertooth_msg) StderrLine: {'line': b'  CMakeLists.txt:37 (rosidl_generate_interfaces)\n'}
+[2.434890] (sabertooth_msg) StderrLine: {'line': b'\n'}
+[2.435288] (sabertooth_msg) StderrLine: {'line': b'\n'}
+[2.435703] (sabertooth_msg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.436129] (sabertooth_msg) StdoutLine: {'line': b'See also "/home/nano/miniCart_ros/build/sabertooth_msg/CMakeFiles/CMakeOutput.log".\n'}
+[2.446073] (sabertooth_msg) CommandEnded: {'returncode': 1}
+[2.521164] (sabertooth_msg) JobEnded: {'identifier': 'sabertooth_msg', 'rc': 1}
+[2.526373] (-) TimerEvent: {}
+[2.532804] (motor_controls) JobSkipped: {'identifier': 'motor_controls'}
+[2.533066] (-) EventReactorShutdown: {}

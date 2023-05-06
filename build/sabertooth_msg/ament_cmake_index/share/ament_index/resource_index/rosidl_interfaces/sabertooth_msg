@@ -1,0 +1,4 @@
+msg/MotorCommand.idl
+msg/MotorCommand.msg
+msg/SpeedVals.idl
+msg/SpeedVals.msg

@@ -1,0 +1,1 @@
+/home/nano/miniCart_ros/build/sabertooth_msg/ament_cmake_environment_hooks/local_setup.zsh

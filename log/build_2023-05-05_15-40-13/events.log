@@ -1,0 +1,495 @@
+[0.000000] (-) TimerEvent: {}
+[0.003120] (miniCart) JobQueued: {'identifier': 'miniCart', 'dependencies': OrderedDict()}
+[0.003302] (sabertooth_msg) JobQueued: {'identifier': 'sabertooth_msg', 'dependencies': OrderedDict()}
+[0.003452] (motor_controls) JobQueued: {'identifier': 'motor_controls', 'dependencies': OrderedDict([('sabertooth_msg', '/home/nano/miniCart_ros/install/sabertooth_msg')])}
+[0.003615] (sabertooth_msg) JobStarted: {'identifier': 'sabertooth_msg'}
+[0.048866] (miniCart) JobStarted: {'identifier': 'miniCart'}
+[0.073364] (sabertooth_msg) JobProgress: {'identifier': 'sabertooth_msg', 'progress': 'cmake'}
+[0.076030] (sabertooth_msg) Command: {'cmd': ['/usr/bin/cmake', '/home/nano/miniCart_ros/src/sabertooth_msg', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/nano/miniCart_ros/install/sabertooth_msg'], 'cwd': '/home/nano/miniCart_ros/build/sabertooth_msg', 'env': OrderedDict([('USER', 'nano'), ('SSH_CLIENT', '192.168.0.181 54560 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nano'), ('OLDPWD', '/home/nano'), ('TERM_PROGRAM_VERSION', '1.78.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6fe1df74-3f4f-467b-b5b9-44321eaf7f20.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nano'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ce3b1e56cc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/nano/miniCart_ros/build/sabertooth_msg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.181 54560 192.168.0.194 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.091783] (miniCart) JobProgress: {'identifier': 'miniCart', 'progress': 'cmake'}
+[0.094242] (miniCart) JobProgress: {'identifier': 'miniCart', 'progress': 'build'}
+[0.098042] (miniCart) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nano/miniCart_ros/build/miniCart', '--', '-j4', '-l4'], 'cwd': '/home/nano/miniCart_ros/build/miniCart', 'env': OrderedDict([('USER', 'nano'), ('SSH_CLIENT', '192.168.0.181 54560 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nano'), ('OLDPWD', '/home/nano'), ('TERM_PROGRAM_VERSION', '1.78.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6fe1df74-3f4f-467b-b5b9-44321eaf7f20.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nano'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ce3b1e56cc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/nano/miniCart_ros/build/miniCart'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.181 54560 192.168.0.194 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.106514] (-) TimerEvent: {}
+[0.139380] (sabertooth_msg) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.204059] (sabertooth_msg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.205242] (sabertooth_msg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.206654] (-) TimerEvent: {}
+[0.239943] (miniCart) CommandEnded: {'returncode': 0}
+[0.306953] (-) TimerEvent: {}
+[0.309149] (miniCart) JobProgress: {'identifier': 'miniCart', 'progress': 'install'}
+[0.348606] (miniCart) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nano/miniCart_ros/build/miniCart'], 'cwd': '/home/nano/miniCart_ros/build/miniCart', 'env': OrderedDict([('USER', 'nano'), ('SSH_CLIENT', '192.168.0.181 54560 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nano'), ('OLDPWD', '/home/nano'), ('TERM_PROGRAM_VERSION', '1.78.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6fe1df74-3f4f-467b-b5b9-44321eaf7f20.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nano'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ce3b1e56cc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/nano/miniCart_ros/build/miniCart'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.181 54560 192.168.0.194 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.377629] (miniCart) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.379208] (miniCart) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.381415] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/config/drive_bot.rviz\n'}
+[0.382087] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/config/empty.yaml\n'}
+[0.382762] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/config/view_bot_rviz.rviz\n'}
+[0.384450] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/description/gazebo_control.xacro\n'}
+[0.385140] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/description/inertial_macros.xacro\n'}
+[0.385851] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/description/robot.urdf.xacro\n'}
+[0.386479] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/description/robot_core.xacro\n'}
+[0.387934] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/launch/launch_sim.launch.py\n'}
+[0.388586] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/launch/rsp.launch.py\n'}
+[0.389937] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/worlds/Kitchen.world\n'}
+[0.390618] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/worlds/empty.world\n'}
+[0.391952] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/ament_index/resource_index/package_run_dependencies/miniCart\n'}
+[0.393106] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/ament_index/resource_index/parent_prefix_path/miniCart\n'}
+[0.394228] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/environment/ament_prefix_path.sh\n'}
+[0.395356] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/environment/ament_prefix_path.dsv\n'}
+[0.396475] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/environment/path.sh\n'}
+[0.397550] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/environment/path.dsv\n'}
+[0.398877] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/local_setup.bash\n'}
+[0.399899] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/local_setup.sh\n'}
+[0.402332] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/local_setup.zsh\n'}
+[0.402910] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/local_setup.dsv\n'}
+[0.404025] (miniCart) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/miniCart/share/miniCart/package.dsv\n'}
+[0.407106] (-) TimerEvent: {}
+[0.434699] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/ament_index/resource_index/packages/miniCart\n'}
+[0.435784] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/cmake/miniCartConfig.cmake\n'}
+[0.436426] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/cmake/miniCartConfig-version.cmake\n'}
+[0.437411] (miniCart) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nano/miniCart_ros/install/miniCart/share/miniCart/package.xml\n'}
+[0.442944] (miniCart) CommandEnded: {'returncode': 0}
+[0.507821] (-) TimerEvent: {}
+[0.615590] (-) TimerEvent: {}
+[0.629987] (miniCart) JobEnded: {'identifier': 'miniCart', 'rc': 0}
+[0.715722] (-) TimerEvent: {}
+[0.816359] (-) TimerEvent: {}
+[0.873588] (sabertooth_msg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.899715] (sabertooth_msg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.916505] (-) TimerEvent: {}
+[1.017115] (-) TimerEvent: {}
+[1.117777] (-) TimerEvent: {}
+[1.132887] (sabertooth_msg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.140624] (sabertooth_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.155453] (sabertooth_msg) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.217982] (-) TimerEvent: {}
+[1.318649] (-) TimerEvent: {}
+[1.419341] (-) TimerEvent: {}
+[1.520011] (-) TimerEvent: {}
+[1.620680] (-) TimerEvent: {}
+[1.678546] (sabertooth_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.720889] (-) TimerEvent: {}
+[1.821883] (-) TimerEvent: {}
+[1.834230] (sabertooth_msg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.922090] (-) TimerEvent: {}
+[2.022780] (-) TimerEvent: {}
+[2.099860] (sabertooth_msg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[2.123010] (-) TimerEvent: {}
+[2.223681] (-) TimerEvent: {}
+[2.324322] (-) TimerEvent: {}
+[2.425062] (-) TimerEvent: {}
+[2.478501] (sabertooth_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.510314] (sabertooth_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.525275] (-) TimerEvent: {}
+[2.572426] (sabertooth_msg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.578151] (sabertooth_msg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[2.625502] (-) TimerEvent: {}
+[2.652355] (sabertooth_msg) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.653221] (sabertooth_msg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.653666] (sabertooth_msg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[2.654089] (sabertooth_msg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[2.710747] (sabertooth_msg) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.725661] (-) TimerEvent: {}
+[2.826352] (-) TimerEvent: {}
+[2.885033] (sabertooth_msg) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.894427] (sabertooth_msg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.899651] (sabertooth_msg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.926554] (-) TimerEvent: {}
+[2.934822] (sabertooth_msg) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.026771] (-) TimerEvent: {}
+[3.056019] (sabertooth_msg) StdoutLine: {'line': b'-- Generating done\n'}
+[3.067933] (sabertooth_msg) StdoutLine: {'line': b'-- Build files have been written to: /home/nano/miniCart_ros/build/sabertooth_msg\n'}
+[3.084497] (sabertooth_msg) CommandEnded: {'returncode': 0}
+[3.086524] (sabertooth_msg) JobProgress: {'identifier': 'sabertooth_msg', 'progress': 'build'}
+[3.091233] (sabertooth_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nano/miniCart_ros/build/sabertooth_msg', '--', '-j4', '-l4'], 'cwd': '/home/nano/miniCart_ros/build/sabertooth_msg', 'env': OrderedDict([('USER', 'nano'), ('SSH_CLIENT', '192.168.0.181 54560 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nano'), ('OLDPWD', '/home/nano'), ('TERM_PROGRAM_VERSION', '1.78.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6fe1df74-3f4f-467b-b5b9-44321eaf7f20.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nano'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ce3b1e56cc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/nano/miniCart_ros/build/sabertooth_msg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.181 54560 192.168.0.194 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[3.126960] (-) TimerEvent: {}
+[3.225788] (sabertooth_msg) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.230775] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__cpp\x1b[0m\n'}
+[3.231487] (-) TimerEvent: {}
+[3.267564] (sabertooth_msg) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.331728] (-) TimerEvent: {}
+[3.432382] (-) TimerEvent: {}
+[3.533014] (-) TimerEvent: {}
+[3.633691] (-) TimerEvent: {}
+[3.734409] (-) TimerEvent: {}
+[3.835093] (-) TimerEvent: {}
+[3.935696] (-) TimerEvent: {}
+[4.036822] (-) TimerEvent: {}
+[4.138147] (-) TimerEvent: {}
+[4.239197] (-) TimerEvent: {}
+[4.340188] (-) TimerEvent: {}
+[4.440828] (-) TimerEvent: {}
+[4.541567] (-) TimerEvent: {}
+[4.555817] (sabertooth_msg) StdoutLine: {'line': b'[  5%] Built target sabertooth_msg__cpp\n'}
+[4.591144] (sabertooth_msg) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.624855] (sabertooth_msg) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.631321] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__rosidl_generator_c\x1b[0m\n'}
+[4.632019] (sabertooth_msg) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.641727] (-) TimerEvent: {}
+[4.676314] (sabertooth_msg) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/sabertooth_msg__rosidl_generator_c.dir/rosidl_generator_c/sabertooth_msg/msg/detail/speed_vals__functions.c.o\x1b[0m\n'}
+[4.741898] (-) TimerEvent: {}
+[4.846714] (-) TimerEvent: {}
+[4.947397] (-) TimerEvent: {}
+[5.011224] (sabertooth_msg) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/sabertooth_msg__rosidl_generator_c.dir/rosidl_generator_c/sabertooth_msg/msg/detail/motor_command__functions.c.o\x1b[0m\n'}
+[5.047563] (-) TimerEvent: {}
+[5.148246] (-) TimerEvent: {}
+[5.248902] (-) TimerEvent: {}
+[5.349530] (-) TimerEvent: {}
+[5.414073] (sabertooth_msg) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libsabertooth_msg__rosidl_generator_c.so\x1b[0m\n'}
+[5.449699] (-) TimerEvent: {}
+[5.550324] (-) TimerEvent: {}
+[5.555294] (sabertooth_msg) StdoutLine: {'line': b'[ 20%] Built target sabertooth_msg__rosidl_generator_c\n'}
+[5.593621] (sabertooth_msg) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.650512] (-) TimerEvent: {}
+[5.751204] (-) TimerEvent: {}
+[5.782503] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__rosidl_typesupport_cpp\x1b[0m\n'}
+[5.851378] (-) TimerEvent: {}
+[5.858896] (sabertooth_msg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/sabertooth_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sabertooth_msg/msg/speed_vals__type_support.cpp.o\x1b[0m\n'}
+[5.925624] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[5.951538] (-) TimerEvent: {}
+[6.008369] (sabertooth_msg) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/sabertooth_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sabertooth_msg/msg/detail/speed_vals__type_support.cpp.o\x1b[0m\n'}
+[6.013970] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[6.051698] (-) TimerEvent: {}
+[6.110361] (sabertooth_msg) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/sabertooth_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sabertooth_msg/msg/detail/dds_fastrtps/speed_vals__type_support.cpp.o\x1b[0m\n'}
+[6.151873] (-) TimerEvent: {}
+[6.252552] (-) TimerEvent: {}
+[6.353231] (-) TimerEvent: {}
+[6.453905] (-) TimerEvent: {}
+[6.554593] (-) TimerEvent: {}
+[6.655287] (-) TimerEvent: {}
+[6.755971] (-) TimerEvent: {}
+[6.856725] (-) TimerEvent: {}
+[6.949827] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[6.956898] (-) TimerEvent: {}
+[7.036291] (sabertooth_msg) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding C object CMakeFiles/sabertooth_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sabertooth_msg/msg/detail/speed_vals__type_support.c.o\x1b[0m\n'}
+[7.057087] (-) TimerEvent: {}
+[7.157808] (-) TimerEvent: {}
+[7.175119] (sabertooth_msg) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/sabertooth_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sabertooth_msg/msg/detail/motor_command__type_support.c.o\x1b[0m\n'}
+[7.228207] (sabertooth_msg) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/sabertooth_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sabertooth_msg/msg/motor_command__type_support.cpp.o\x1b[0m\n'}
+[7.257992] (-) TimerEvent: {}
+[7.311696] (sabertooth_msg) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking C shared library libsabertooth_msg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.358191] (-) TimerEvent: {}
+[7.376053] (sabertooth_msg) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/sabertooth_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sabertooth_msg/msg/detail/motor_command__type_support.cpp.o\x1b[0m\n'}
+[7.434565] (sabertooth_msg) StdoutLine: {'line': b'[ 43%] Built target sabertooth_msg__rosidl_typesupport_introspection_c\n'}
+[7.458377] (-) TimerEvent: {}
+[7.484081] (sabertooth_msg) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/sabertooth_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sabertooth_msg/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o\x1b[0m\n'}
+[7.558598] (-) TimerEvent: {}
+[7.659323] (-) TimerEvent: {}
+[7.760030] (-) TimerEvent: {}
+[7.860748] (-) TimerEvent: {}
+[7.961463] (-) TimerEvent: {}
+[8.062214] (-) TimerEvent: {}
+[8.153668] (sabertooth_msg) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.162397] (-) TimerEvent: {}
+[8.263152] (-) TimerEvent: {}
+[8.363871] (-) TimerEvent: {}
+[8.464578] (-) TimerEvent: {}
+[8.565277] (-) TimerEvent: {}
+[8.593994] (sabertooth_msg) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libsabertooth_msg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[8.665466] (-) TimerEvent: {}
+[8.725939] (sabertooth_msg) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libsabertooth_msg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[8.750486] (sabertooth_msg) StdoutLine: {'line': b'[ 53%] Built target sabertooth_msg__rosidl_typesupport_cpp\n'}
+[8.765636] (-) TimerEvent: {}
+[8.864927] (sabertooth_msg) StdoutLine: {'line': b'[ 53%] Built target sabertooth_msg__rosidl_typesupport_introspection_cpp\n'}
+[8.865773] (-) TimerEvent: {}
+[8.966419] (-) TimerEvent: {}
+[9.067132] (-) TimerEvent: {}
+[9.167757] (-) TimerEvent: {}
+[9.268374] (-) TimerEvent: {}
+[9.369025] (-) TimerEvent: {}
+[9.415191] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__rosidl_typesupport_c\x1b[0m\n'}
+[9.447292] (sabertooth_msg) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libsabertooth_msg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[9.457273] (sabertooth_msg) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/sabertooth_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/sabertooth_msg/msg/motor_command__type_support.cpp.o\x1b[0m\n'}
+[9.457983] (sabertooth_msg) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/sabertooth_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/sabertooth_msg/msg/speed_vals__type_support.cpp.o\x1b[0m\n'}
+[9.469273] (-) TimerEvent: {}
+[9.570031] (-) TimerEvent: {}
+[9.571608] (sabertooth_msg) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libsabertooth_msg__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.670276] (-) TimerEvent: {}
+[9.711268] (sabertooth_msg) StdoutLine: {'line': b'[ 64%] Built target sabertooth_msg__rosidl_typesupport_c\n'}
+[9.770636] (-) TimerEvent: {}
+[9.798369] (sabertooth_msg) StdoutLine: {'line': b'[ 64%] Built target sabertooth_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[9.831808] (sabertooth_msg) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.870808] (-) TimerEvent: {}
+[9.971442] (-) TimerEvent: {}
+[10.072106] (-) TimerEvent: {}
+[10.172725] (-) TimerEvent: {}
+[10.273431] (-) TimerEvent: {}
+[10.374568] (-) TimerEvent: {}
+[10.475243] (-) TimerEvent: {}
+[10.575914] (-) TimerEvent: {}
+[10.676585] (-) TimerEvent: {}
+[10.777272] (-) TimerEvent: {}
+[10.877960] (-) TimerEvent: {}
+[10.978011] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[10.978629] (-) TimerEvent: {}
+[11.027571] (sabertooth_msg) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/sabertooth_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sabertooth_msg/msg/detail/speed_vals__type_support_c.cpp.o\x1b[0m\n'}
+[11.028650] (sabertooth_msg) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/sabertooth_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sabertooth_msg/msg/detail/motor_command__type_support_c.cpp.o\x1b[0m\n'}
+[11.078871] (-) TimerEvent: {}
+[11.179564] (-) TimerEvent: {}
+[11.280235] (-) TimerEvent: {}
+[11.380999] (-) TimerEvent: {}
+[11.481739] (-) TimerEvent: {}
+[11.582521] (-) TimerEvent: {}
+[11.683185] (-) TimerEvent: {}
+[11.783867] (-) TimerEvent: {}
+[11.884522] (-) TimerEvent: {}
+[11.985259] (-) TimerEvent: {}
+[12.085972] (-) TimerEvent: {}
+[12.186706] (-) TimerEvent: {}
+[12.287412] (-) TimerEvent: {}
+[12.388152] (-) TimerEvent: {}
+[12.480690] (sabertooth_msg) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libsabertooth_msg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.488308] (-) TimerEvent: {}
+[12.588949] (-) TimerEvent: {}
+[12.689745] (-) TimerEvent: {}
+[12.790505] (-) TimerEvent: {}
+[12.793621] (sabertooth_msg) StdoutLine: {'line': b'[ 74%] Built target sabertooth_msg__rosidl_typesupport_fastrtps_c\n'}
+[12.825153] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg\x1b[0m\n'}
+[12.857864] (sabertooth_msg) StdoutLine: {'line': b'[ 74%] Built target sabertooth_msg\n'}
+[12.889819] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__py\x1b[0m\n'}
+[12.890613] (-) TimerEvent: {}
+[12.923332] (sabertooth_msg) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.990838] (-) TimerEvent: {}
+[13.091486] (-) TimerEvent: {}
+[13.192186] (-) TimerEvent: {}
+[13.292877] (-) TimerEvent: {}
+[13.393582] (-) TimerEvent: {}
+[13.494262] (-) TimerEvent: {}
+[13.594939] (-) TimerEvent: {}
+[13.695623] (-) TimerEvent: {}
+[13.796289] (-) TimerEvent: {}
+[13.897157] (-) TimerEvent: {}
+[13.999835] (-) TimerEvent: {}
+[14.100776] (-) TimerEvent: {}
+[14.201685] (-) TimerEvent: {}
+[14.302560] (-) TimerEvent: {}
+[14.403261] (-) TimerEvent: {}
+[14.503898] (-) TimerEvent: {}
+[14.604530] (-) TimerEvent: {}
+[14.705166] (-) TimerEvent: {}
+[14.805822] (-) TimerEvent: {}
+[14.906530] (-) TimerEvent: {}
+[15.007268] (-) TimerEvent: {}
+[15.074735] (sabertooth_msg) StdoutLine: {'line': b'[ 76%] Built target sabertooth_msg__py\n'}
+[15.106911] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__python\x1b[0m\n'}
+[15.107549] (-) TimerEvent: {}
+[15.208098] (-) TimerEvent: {}
+[15.236464] (sabertooth_msg) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/sabertooth_msg__python.dir/rosidl_generator_py/sabertooth_msg/msg/_motor_command_s.c.o\x1b[0m\n'}
+[15.237150] (sabertooth_msg) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/sabertooth_msg__python.dir/rosidl_generator_py/sabertooth_msg/msg/_speed_vals_s.c.o\x1b[0m\n'}
+[15.308264] (-) TimerEvent: {}
+[15.408932] (-) TimerEvent: {}
+[15.509982] (-) TimerEvent: {}
+[15.610691] (-) TimerEvent: {}
+[15.647692] (sabertooth_msg) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/sabertooth_msg/libsabertooth_msg__python.so\x1b[0m\n'}
+[15.710918] (-) TimerEvent: {}
+[15.775754] (sabertooth_msg) StdoutLine: {'line': b'[ 84%] Built target sabertooth_msg__python\n'}
+[15.809815] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[15.810453] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[15.810863] (sabertooth_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sabertooth_msg__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[15.811308] (-) TimerEvent: {}
+[15.876435] (sabertooth_msg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/sabertooth_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/sabertooth_msg/_sabertooth_msg_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[15.888588] (sabertooth_msg) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/sabertooth_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/sabertooth_msg/_sabertooth_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[15.902003] (sabertooth_msg) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/sabertooth_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/sabertooth_msg/_sabertooth_msg_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[15.911506] (-) TimerEvent: {}
+[16.012212] (-) TimerEvent: {}
+[16.112910] (-) TimerEvent: {}
+[16.213610] (-) TimerEvent: {}
+[16.240587] (sabertooth_msg) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/sabertooth_msg/sabertooth_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[16.254033] (sabertooth_msg) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/sabertooth_msg/sabertooth_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[16.290116] (sabertooth_msg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/sabertooth_msg/sabertooth_msg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[16.313798] (-) TimerEvent: {}
+[16.370338] (sabertooth_msg) StdoutLine: {'line': b'[100%] Built target sabertooth_msg__rosidl_typesupport_c__pyext\n'}
+[16.414043] (-) TimerEvent: {}
+[16.425078] (sabertooth_msg) StdoutLine: {'line': b'[100%] Built target sabertooth_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[16.481777] (sabertooth_msg) StdoutLine: {'line': b'[100%] Built target sabertooth_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[16.514270] (-) TimerEvent: {}
+[16.521233] (sabertooth_msg) CommandEnded: {'returncode': 0}
+[16.614482] (-) TimerEvent: {}
+[16.684714] (sabertooth_msg) JobProgress: {'identifier': 'sabertooth_msg', 'progress': 'install'}
+[16.685757] (sabertooth_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nano/miniCart_ros/build/sabertooth_msg'], 'cwd': '/home/nano/miniCart_ros/build/sabertooth_msg', 'env': OrderedDict([('USER', 'nano'), ('SSH_CLIENT', '192.168.0.181 54560 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nano'), ('OLDPWD', '/home/nano'), ('TERM_PROGRAM_VERSION', '1.78.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6fe1df74-3f4f-467b-b5b9-44321eaf7f20.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nano'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ce3b1e56cc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/nano/miniCart_ros/build/sabertooth_msg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.181 54560 192.168.0.194 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[16.714742] (-) TimerEvent: {}
+[16.720148] (sabertooth_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.722271] (sabertooth_msg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[16.723556] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/ament_index/resource_index/rosidl_interfaces/sabertooth_msg\n'}
+[16.754440] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/motor_command__functions.h\n'}
+[16.783359] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/motor_command__struct.h\n'}
+[16.812781] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/motor_command__type_support.h\n'}
+[16.814901] (-) TimerEvent: {}
+[16.842941] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/speed_vals__functions.h\n'}
+[16.872550] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/speed_vals__struct.h\n'}
+[16.901183] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/speed_vals__type_support.h\n'}
+[16.915085] (-) TimerEvent: {}
+[16.930313] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/motor_command.h\n'}
+[16.959320] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[16.989433] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/speed_vals.h\n'}
+[17.015301] (-) TimerEvent: {}
+[17.018863] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/environment/library_path.sh\n'}
+[17.048643] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/environment/library_path.dsv\n'}
+[17.079504] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/motor_command__rosidl_typesupport_fastrtps_c.h\n'}
+[17.110182] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/speed_vals__rosidl_typesupport_fastrtps_c.h\n'}
+[17.115507] (-) TimerEvent: {}
+[17.141745] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[17.171857] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[17.202821] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.215665] (-) TimerEvent: {}
+[17.231842] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/speed_vals__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.261095] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[17.291302] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[17.315839] (-) TimerEvent: {}
+[17.322497] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/motor_command__rosidl_typesupport_introspection_c.h\n'}
+[17.351332] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/speed_vals__rosidl_typesupport_introspection_c.h\n'}
+[17.380295] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[17.411305] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/motor_command__builder.hpp\n'}
+[17.416041] (-) TimerEvent: {}
+[17.440519] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/motor_command__struct.hpp\n'}
+[17.469821] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/motor_command__traits.hpp\n'}
+[17.500222] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/speed_vals__builder.hpp\n'}
+[17.516212] (-) TimerEvent: {}
+[17.529243] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/speed_vals__struct.hpp\n'}
+[17.558160] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/speed_vals__traits.hpp\n'}
+[17.586540] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/motor_command.hpp\n'}
+[17.615567] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/speed_vals.hpp\n'}
+[17.616675] (-) TimerEvent: {}
+[17.647981] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/motor_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.677046] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/include/sabertooth_msg/msg/detail/speed_vals__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.706081] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/environment/pythonpath.sh\n'}
+[17.716881] (-) TimerEvent: {}
+[17.737604] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/environment/pythonpath.dsv\n'}
+[17.768834] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/lib/python3.8/site-packages/sabertooth_msg/__init__.py\n'}
+[17.801162] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/lib/python3.8/site-packages/sabertooth_msg/msg/__init__.py\n'}
+[17.817059] (-) TimerEvent: {}
+[17.830387] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/lib/python3.8/site-packages/sabertooth_msg/msg/_motor_command.py\n'}
+[17.859297] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/lib/python3.8/site-packages/sabertooth_msg/msg/_speed_vals.py\n'}
+[17.890123] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/lib/python3.8/site-packages/sabertooth_msg/sabertooth_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[17.917282] (-) TimerEvent: {}
+[17.920087] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/lib/python3.8/site-packages/sabertooth_msg/sabertooth_msg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[17.950373] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/lib/python3.8/site-packages/sabertooth_msg/sabertooth_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[17.979791] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__python.so\n'}
+[18.009261] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/msg/SpeedVals.idl\n'}
+[18.017486] (-) TimerEvent: {}
+[18.038875] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/msg/MotorCommand.idl\n'}
+[18.068559] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/msg/SpeedVals.msg\n'}
+[18.097813] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/msg/MotorCommand.msg\n'}
+[18.117720] (-) TimerEvent: {}
+[18.127321] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/ament_index/resource_index/package_run_dependencies/sabertooth_msg\n'}
+[18.159935] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/ament_index/resource_index/parent_prefix_path/sabertooth_msg\n'}
+[18.194204] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/environment/ament_prefix_path.sh\n'}
+[18.217905] (-) TimerEvent: {}
+[18.260283] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/environment/ament_prefix_path.dsv\n'}
+[18.295077] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/environment/path.sh\n'}
+[18.318083] (-) TimerEvent: {}
+[18.331647] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/environment/path.dsv\n'}
+[18.360880] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/local_setup.bash\n'}
+[18.390161] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/local_setup.sh\n'}
+[18.418255] (-) TimerEvent: {}
+[18.419935] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/local_setup.zsh\n'}
+[18.449934] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/local_setup.dsv\n'}
+[18.481552] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/package.dsv\n'}
+[18.512602] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/ament_index/resource_index/packages/sabertooth_msg\n'}
+[18.518474] (-) TimerEvent: {}
+[18.543281] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[18.573098] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[18.602642] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[18.618704] (-) TimerEvent: {}
+[18.635452] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[18.666453] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[18.695894] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[18.718880] (-) TimerEvent: {}
+[18.725987] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[18.755508] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msgConfig.cmake\n'}
+[18.784549] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msgConfig-version.cmake\n'}
+[18.813763] (sabertooth_msg) StdoutLine: {'line': b'-- Symlinking: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/package.xml\n'}
+[18.819124] (-) TimerEvent: {}
+[18.844787] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__rosidl_generator_c.so\n'}
+[18.846103] (sabertooth_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__rosidl_generator_c.so" to ""\n'}
+[18.846729] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__rosidl_typesupport_introspection_c.so\n'}
+[18.848267] (sabertooth_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__rosidl_typesupport_introspection_c.so" to ""\n'}
+[18.848851] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__rosidl_typesupport_c.so\n'}
+[18.850038] (sabertooth_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__rosidl_typesupport_c.so" to ""\n'}
+[18.850559] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[18.852069] (sabertooth_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[18.852616] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__rosidl_typesupport_cpp.so\n'}
+[18.853716] (sabertooth_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/nano/miniCart_ros/install/sabertooth_msg/lib/libsabertooth_msg__rosidl_typesupport_cpp.so" to ""\n'}
+[18.919327] (-) TimerEvent: {}
+[18.978722] (sabertooth_msg) StdoutLine: {'line': b"Compiling '/home/nano/miniCart_ros/install/sabertooth_msg/lib/python3.8/site-packages/sabertooth_msg/__init__.py'...\n"}
+[19.005170] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msg__rosidl_generator_cExport.cmake\n'}
+[19.005890] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[19.008359] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[19.008989] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[19.009709] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msg__rosidl_typesupport_cExport.cmake\n'}
+[19.010309] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[19.010822] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msg__rosidl_generator_cppExport.cmake\n'}
+[19.012838] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[19.014788] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[19.018491] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msg__rosidl_typesupport_cppExport.cmake\n'}
+[19.019372] (-) TimerEvent: {}
+[19.023168] (sabertooth_msg) StdoutLine: {'line': b'-- Installing: /home/nano/miniCart_ros/install/sabertooth_msg/share/sabertooth_msg/cmake/sabertooth_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[19.032653] (sabertooth_msg) CommandEnded: {'returncode': 0}
+[19.119631] (-) TimerEvent: {}
+[19.220428] (-) TimerEvent: {}
+[19.326567] (-) TimerEvent: {}
+[19.342414] (sabertooth_msg) JobEnded: {'identifier': 'sabertooth_msg', 'rc': 0}
+[19.352799] (motor_controls) JobStarted: {'identifier': 'motor_controls'}
+[19.426919] (-) TimerEvent: {}
+[19.527784] (-) TimerEvent: {}
+[19.628453] (-) TimerEvent: {}
+[19.729111] (-) TimerEvent: {}
+[19.829799] (-) TimerEvent: {}
+[19.930513] (-) TimerEvent: {}
+[20.031153] (-) TimerEvent: {}
+[20.131735] (-) TimerEvent: {}
+[20.232561] (-) TimerEvent: {}
+[20.333459] (-) TimerEvent: {}
+[20.434297] (-) TimerEvent: {}
+[20.534962] (-) TimerEvent: {}
+[20.635594] (-) TimerEvent: {}
+[20.736214] (-) TimerEvent: {}
+[20.836807] (-) TimerEvent: {}
+[20.937747] (-) TimerEvent: {}
+[21.038322] (-) TimerEvent: {}
+[21.138962] (-) TimerEvent: {}
+[21.239581] (-) TimerEvent: {}
+[21.340173] (-) TimerEvent: {}
+[21.440837] (-) TimerEvent: {}
+[21.542065] (-) TimerEvent: {}
+[21.551374] (motor_controls) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/nano/miniCart_ros/build/motor_controls/build', '--no-deps', 'install_data'], 'cwd': '/home/nano/miniCart_ros/build/motor_controls', 'env': {'USER': 'nano', 'SSH_CLIENT': '192.168.0.181 54560 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/nano/miniCart_ros/install/sabertooth_msg/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/nano', 'OLDPWD': '/home/nano', 'TERM_PROGRAM_VERSION': '1.78.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-6fe1df74-3f4f-467b-b5b9-44321eaf7f20.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'nano', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/nano/.vscode-server/bin/252e5463d60e63238250799aef7375787f68b4ee/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ce3b1e56cc.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/nano/miniCart_ros/install/sabertooth_msg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/nano/miniCart_ros/build/motor_controls', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.181 54560 192.168.0.194 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nano/miniCart_ros/build/motor_controls/prefix_override:/home/nano/miniCart_ros/install/motor_controls/lib/python3.8/site-packages:/home/nano/miniCart_ros/install/sabertooth_msg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/nano/miniCart_ros/install/sabertooth_msg'}, 'shell': False}
+[21.642300] (-) TimerEvent: {}
+[21.743089] (-) TimerEvent: {}
+[21.843727] (-) TimerEvent: {}
+[21.944317] (-) TimerEvent: {}
+[22.044958] (-) TimerEvent: {}
+[22.145588] (-) TimerEvent: {}
+[22.246516] (-) TimerEvent: {}
+[22.347157] (-) TimerEvent: {}
+[22.350736] (motor_controls) StdoutLine: {'line': b'running develop\n'}
+[22.447353] (-) TimerEvent: {}
+[22.547986] (-) TimerEvent: {}
+[22.648627] (-) TimerEvent: {}
+[22.749213] (-) TimerEvent: {}
+[22.780588] (motor_controls) StdoutLine: {'line': b'running egg_info\n'}
+[22.781203] (motor_controls) StdoutLine: {'line': b'creating motor_controls.egg-info\n'}
+[22.781752] (motor_controls) StdoutLine: {'line': b'writing motor_controls.egg-info/PKG-INFO\n'}
+[22.782272] (motor_controls) StdoutLine: {'line': b'writing dependency_links to motor_controls.egg-info/dependency_links.txt\n'}
+[22.782795] (motor_controls) StdoutLine: {'line': b'writing entry points to motor_controls.egg-info/entry_points.txt\n'}
+[22.783312] (motor_controls) StdoutLine: {'line': b'writing requirements to motor_controls.egg-info/requires.txt\n'}
+[22.783686] (motor_controls) StdoutLine: {'line': b'writing top-level names to motor_controls.egg-info/top_level.txt\n'}
+[22.787713] (motor_controls) StdoutLine: {'line': b"writing manifest file 'motor_controls.egg-info/SOURCES.txt'\n"}
+[22.849418] (-) TimerEvent: {}
+[22.934799] (motor_controls) StdoutLine: {'line': b"reading manifest file 'motor_controls.egg-info/SOURCES.txt'\n"}
+[22.937326] (motor_controls) StdoutLine: {'line': b"writing manifest file 'motor_controls.egg-info/SOURCES.txt'\n"}
+[22.943283] (motor_controls) StdoutLine: {'line': b'running build_ext\n'}
+[22.944260] (motor_controls) StdoutLine: {'line': b'Creating /home/nano/miniCart_ros/install/motor_controls/lib/python3.8/site-packages/site.py\n'}
+[22.949537] (-) TimerEvent: {}
+[22.952491] (motor_controls) StdoutLine: {'line': b'Creating /home/nano/miniCart_ros/install/motor_controls/lib/python3.8/site-packages/motor-controls.egg-link (link to .)\n'}
+[22.955432] (motor_controls) StdoutLine: {'line': b'Installing control = motor_controls.Controller:maindriver script to /home/nano/miniCart_ros/install/motor_controls/lib/motor_controls\n'}
+[22.956352] (motor_controls) StdoutLine: {'line': b'\n'}
+[22.956970] (motor_controls) StdoutLine: {'line': b'Installed /home/nano/miniCart_ros/build/motor_controls\n'}
+[22.957649] (motor_controls) StdoutLine: {'line': b'running install_data\n'}
+[22.958164] (motor_controls) StdoutLine: {'line': b'creating /home/nano/miniCart_ros/install/motor_controls/share/ament_index\n'}
+[22.958743] (motor_controls) StdoutLine: {'line': b'creating /home/nano/miniCart_ros/install/motor_controls/share/ament_index/resource_index\n'}
+[22.959286] (motor_controls) StdoutLine: {'line': b'creating /home/nano/miniCart_ros/install/motor_controls/share/ament_index/resource_index/packages\n'}
+[22.959735] (motor_controls) StdoutLine: {'line': b'copying resource/motor_controls -> /home/nano/miniCart_ros/install/motor_controls/share/ament_index/resource_index/packages\n'}
+[22.960175] (motor_controls) StdoutLine: {'line': b'copying package.xml -> /home/nano/miniCart_ros/install/motor_controls/share/motor_controls\n'}
+[23.049797] (-) TimerEvent: {}
+[23.062909] (motor_controls) CommandEnded: {'returncode': 0}
+[23.121883] (motor_controls) JobEnded: {'identifier': 'motor_controls', 'rc': 0}
+[23.125086] (-) EventReactorShutdown: {}

@@ -1,0 +1,7 @@
+{
+  "package_name": "sabertooth_msg",
+  "non_idl_tuples": [
+    "/home/nano/miniCart_ros/src/sabertooth_msg:msg/SpeedVals.msg",
+    "/home/nano/miniCart_ros/src/sabertooth_msg:msg/MotorCommand.msg"
+  ]
+}
